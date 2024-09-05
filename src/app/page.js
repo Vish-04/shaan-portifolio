@@ -5,6 +5,7 @@ import Link from 'next/link';
 import AboutMeSection from "@/components/AboutMeSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import ProjectSummary from "@/components/ProjectSummary";
+import WorkWithMeSection from "@/components/Contact";
 
 export default function Home() {
   const projectSummaries= [
@@ -35,6 +36,7 @@ export default function Home() {
       {projectSummaries.map((projectSummary) => (
         <ProjectSummary key={projectSummary.link} {...projectSummary} />
       ))}
+      <WorkWithMeSection />
     </Box>
   );
 }
